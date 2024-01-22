@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard - JobLinks Rwanda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        aside {
+            background-color: #007BFF;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 60px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        main {
+            margin-left: 220px;
+            padding: 30px;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Menu -->
+    <header>
+        <div class="logo">JobLinks Rwanda</div>
+        <nav>
+            <ul>
+                <li><a href="#">Return</a></li>
+                <li><a href="pproject.html">Logout</a></li> <!-- Link to the homepage -->
+                <li><a href="https://accounts.google.com/b/0/AddMailService">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Left Menu -->
+    <aside>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Your Dashboard Content Goes Here -->
+        <h1>Welcome to Your Employer Dashboard</h1>
+        <p>This is where you can manage your job listings, applicants, and interviews.</p>
+        <form method="post" action="padmin_dashboard.php">
+            <button type="submit" name="employee-tab">Employee Tab</button>
+            
+            <button type="submit" name="message-tab">Message Tab</button>
+            <button type="submit" name="add-job">Add Job</button>
+            
+            <button type="submit" name="view-job">View Jobs</button>
+            <button type="submit" name="update-job">Update Job</button>
+        </form>
+        <!-- Include the specific components for the features you need -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 JobLinks Rwanda. All in Peace.</p>
+    </footer>
+</body>
+</html>

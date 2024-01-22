@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobLinks Rwanda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+            color:black;
+        }
+
+        #hero-section {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 400px;
+            overflow: hidden;
+        }
+        #p {
+            color:black;
+            font-style: italic;
+            font-weight: bold;
+            background-color: whitesmoke;
+        }
+        #hero-section img {
+            width: 50%;
+            height: auto;
+            order: 2; /* Display image on the right side */
+border-radius: 50px;
+
+        }
+
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color:rgba(173, 216, 230, 0.8);
+            position: relative;
+            z-index: 2;
+            width: 50%;
+            order: 1; /* Display content on the left side */
+
+border-radius:30 
+            transform: rotate(0deg);
+        }
+
+        #logo {
+            font-style: italic;
+            font-weight: bold;
+            color: greenyellow;
+        }
+
+        #branding {
+            text-align:right;
+            color: #333;
+            width: 100%;
+        }
+
+        #project-statement {
+            font-weight: bold;
+            font-size: 1.8em;
+            margin-bottom: 310px;
+border-radius: 50px;
+ background-color: green;
+            color:black; /* Change to a dark color for visibility */
+        }
+
+         #main-nav {
+            background-color: green;
+            color: #fff;
+            padding: 15px;
+border-radius: 15px;
+
+        }
+
+        #menu {
+            display: flex;
+justify-content: flex-end;
+            position: relative;
+            z-index: 2;
+            margin: 10px 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu:hover .submenu-content {
+            display: block;
+        }
+
+        .submenu-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #008080; /* Teal color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .submenu-content a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+<!...#main-nav {
+            background-color: green;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 2;
+            margin: 10px 20px; /* Add some margin for better separation */
+        }
+
+        #menu {
+            display: flex;
+            margin: 10px;
+        }
+
+        #menu a {
+            color:blanchedalmond;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        #menu a:hover {
+            background-color:black;
+            color:rebeccapurple;
+        }...>
+        #content {
+            margin: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .apply-button {
+            background-color: blue; /* Teal color */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .apply-button1 {
+            background-color: green; /* Teal color */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-button:hover {
+            background-color: rebeccapurple; /* Darker Teal color on hover */
+        }
+        .apply-button:hover {
+            background-color: yellowgreen; /* Darker Teal color on hover */
+        }
+
+        #contact-info {
+            text-align: center;
+            margin-bottom: 40px;
+            background-color:teal;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #contact-info a {
+            text-decoration: none;
+            color:black;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        #footer {
+            background-color:black ;
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px 0;
+            clear: both;
+            position: relative;
+            z-index: 2;
+border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="main-nav">
+        <div id="menu">
+            
+            <div class="submenu">
+                <a href="#">Register</a>
+                <div class="submenu-content">
+                    <a href="pcreate-account.html">Employee</a>
+                    <a href="pcreate-account.html">Employer</a>
+                    <a href="padminregister.html">Admin</a>
+                    
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="#">Login</a>
+                <div class="submenu-content">
+                    <a href="employee-dashboard.html">Employee</a>
+                    <a href="employer-dashboard.html">Employer</a>
+                    <a href="padmin-dashboard.html">Admin</a>
+                    
+                </div>
+                <a href="career-guidance.html"> Get Training</a>
+                <a href="pproject.html">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero-section">
+        <div id="header">
+            <div id="branding">
+                
+                <div id="project-statement"><i>JobLink Rwanda</i></div>
+                <p><I>"Your potential is limitless. , Unleash it with JobLinks Rwanda."</I></p>
+                
+                <div id="description">
+                    
+                </div>
+            </div>
+            
+        </div>
+        <img id="project-photo" src="testphoto-homelink.jpg" alt="Joblinks">
+    </div>
+
+    
+
+    <div id="p">
+        <!-- Your existing content goes here -->
+        
+                    <p><B> A bridge between your skills and dream job, making the search smooth and easy. Let your talents shine, and watch your career take off!</B></p>
+        <p><i><b><u>Connect with us:</u></b></i></p>
+
+
+        <a href="application_form.html" class="apply-button">Apply Now</a>
+        <a href="career-guidance.html" class="apply-button1">Get Training</a>
+
+        <div id="contact-info">
+            <a href="https://wa.me/250786490020" target="_blank">
+                <img src="watsapp-icon.jpg" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://www.facebook.com/joblinksrwanda" target="_blank">
+                <img src="facebook-icon.jpg" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/Kigali_network?t=bQ-r3XRfdgyP_2XP0DgFFw&s=09" target="_blank">
+                <img src="x-icon.png" alt="x">
+                <span>x</span>
+            </a>
+        </div>
+        <div id="footer">
+            <p>&copy; 2024 JobLinks Rwanda. All in Peace.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+
+
+
+<style>
+.myDiv {
+border: 5px outset black;
+
+background-color: blue; color: white;    padding: 20px;
+            border-radius: 10px;
+            width: 85%;
+            height: 70px;
+            margin:20px auto;
+text-align: center;
+}
+
+.myDiv p {
+  animation: slide-in-right 4s ease-in-out forwards;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+
+
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #left-tabs {
+            display: flex;
+        }
+
+        #left-tabs a {
+            display: block;
+            padding: 10px;
+            color: #00f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #right-tabs {
+            display: flex;
+        }
+
+        #right-tabs a {
+            display: block;
+            padding: 10px;
+            color:#00f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+  
+</style>
+</head>
+<body>
+
+<div id="mobile-menu-in">&#9776;<a href="homelink-tab.html"> Back</a></div>
+
+<div id="header">
+        <div id="left-tabs">
+            <a href="test-buy.html">Buy</a>
+            <a href="test-joblink.html">Rent</a>
+            <a href="separated3.html">Job</a>
+        </div>
+
+        <div id="right-tabs">
+            <a href="login.html">Sign In</a>
+            <a href="create_account.html">Sign Up</a>
+            <a href="career-guidance.html">Prepare</a>
+        </div>
+    </div>
+
+<div class="myDiv">
+<h4><b><u>JOB LINKED</u><b></h4>
+<p>Meet with your Employees &Employers  .</p>
+
+</div>
+
+   
+    <title>JOBLINKS.COM</title>
+
+
+<a href="create_account.html"><b><strong>Sign up</strong></b></a>
+</head>
+
+<a href="apply2.html"><b>, Apply</b></a></p>
+
+    <div id="header">
+        <h1 class="welcome-message"><strong>JOBLINK.COM</strong></h1>
+
+    </div>
+
+    <div class="search-input">
+        <input type="text" id="search-box" placeholder="Search for jobs...">
+
+<div style="background-image: url('JOBLINK2.jpg'); background-size:cover; border: 7px outset blue;
+background-color: lightblue;
+text-align: center; width: 100%; height: 500px;"></div>
+
+
+    </div>
+
+
+    <!---<div class="division">
+        <div class="form-container">
+            <h2><i>Employers</i></h2>
+            <a class="form-link" href="employer-form.html">please,submit criterios of your worker </a>--->
+
+
+<! employer dashboard--->
+
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Dashboard</h2>
+
+    <form action="#" method="post" id="employeeCriteriaForm">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+
+        <label for="skills">Skills required (comma-separated):</label>
+        <input type="text" id="skills" name="skills" required>
+
+        <label for="experience">Minimum Experience (years):</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <label for="education">Minimum Education Level:</label>
+        <select id="education" name="education" required>
+            <option value="highSchool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">Ph.D.</option>
+        </select>
+
+        <button type="submit">Submit Criteria</button>
+    </form>
+
+
+<! end of employer dashboard--->
+<! start of employees dashboard--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+'        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .forgot-link {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Dashboard</h2>
+
+    <form action="#" method="post" id="employeeDashboardForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skills" name="skills" required>
+
+        <label for="experience">Experience (years):</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education" required>
+            <option value="highSchool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">Ph.D.</option>
+        </select>
+
+        <button type="submit">Meet</button>
+    </form>
+
+    <a href="create_account.html" class="forgot-link">Forget Username/Password?</a>
+
+</body>
+</html>
+
+
+
+<! ---end of employee dashboard--->
+
+
+
+
+  
+
+     </div>
+        
+ <!--- old employee form
+        <div class="form-container">
+            <h2><i>Employees<i></h2>
+            <a class="form-link" href="employee-form.html">Submit you skills and identification informatio</a>
+        </div>
+    </div>
+--->
+
+     <h1><b>Available job</b></h1>
+
+
+    <label for="jobSelect">Choose every vacancy you want</label>
+    <select id="jobSelect" name="job">
+        <option value primary="teacher">choose job</option>
+        <option value="teacher">DRIVER (Category B)</option>
+        <option value="tailoring">Tailoring(A2)</option>
+        <option value="agriculture">Agriculture(A2)</option>
+        <option value="farming">Farming(A2)</option>
+        <option value="lecturing">LecturER(Dr)</option>
+        <option value="playing">Playing(A2)</option>
+        <option value="teacher">preaching (A0)</option>
+        <option value="tailoring">lecturer(masters)</option>
+        <option value="agriculture">Agronomist(A2)</option>
+        <option value="farming">building(A1)</option>
+        <option value="lecturing">computing(Dr)</option>
+        <option value="playing">seed production(WDA CERIFICATE)</option>
+    </select>
+<input type="submit" value="confirm">
+
+
+    <p>Thank you for your information ,we  notified you see your email and cofirm again <span id="selectedJob"></span></p>
+
+
+    <table class="job-table">
+        <thead>                     
+            <tr>
+                <th>Title</th>
+                <th>Education</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Teacher</td>
+                <td>University</td>
+                <td>Kigali City</td>
+            </tr>
+            <tr>
+                <td>Cleaner</td>
+                <td>Secondary</td>
+                <td>Western</td>
+            </tr>
+            <tr>
+                <td>Lecturer</td>
+                <td>University</td>
+                <td>Eastern</td>
+            </tr>
+            <tr>
+                <td>Mayor</td>
+                <td>A2</td>
+                <td>Northern</td>
+            </tr>
+        </tbody>
+    </table>
+
+<button class="apply-button" style="background-color: #4CAF50; color: white;"><a href="apply2.html"><b>Apply</b></a></p>
+
+</button>
+
+   <!---<h2>Login</h2>
+    
+    
+
+  <button type="submit"><a href="PASSWORDJS.HTML"><b>LOGIN<b></button>--->
+
+          
+
+
+<title>Our Services</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Services</h1>
+
+    <table>
+        <tr>
+            <th>Services</th>
+        </tr>
+        <tr>
+            <td>Advertisement</td>
+        </tr>
+        <tr>
+            <td>Shortlisting</td>
+        </tr>
+        <tr>
+            <td>Recruitment</td>
+        </tr>
+        <tr>
+            <td>Marketing</td>
+        </tr>
+        <tr>
+            <td>Labour Market Data</td>
+        </tr>
+    </table>
+
+
+
+ <title>Contact Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Information</h1>
+
+    <table>
+        <tr>
+            <th>Contact</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Get in touch</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>JobLinks - (KIST PROJECT)</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>KN KIYOVU ,NYARUGENGE-UR</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>P.O. Box 112 KIGALI, RWANDA</td>
+            <td>&okay;</td>
+        </tr>
+        <tr>
+            <td>(+250) 786490020</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>fabricendayisaba16@gmail.com.com</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+
+
+<div class="container">
+        <h1>Realtime Figures</h1>
+
+        <table class="figures-table">
+            <tr>
+                <th>Category</th>
+                <th>Count</th>
+            </tr>
+            <tr>
+                <td>Published jobs</td>
+                <td>9,505</td>
+            </tr>
+            <tr>
+                <td>Registered employers</td>
+                <td>3,015</td>
+            </tr>
+            <tr>
+                <td>Registered job candidates</td>
+                <td>109</td>
+            </tr>
+        </table>
+
+
+
+
+<p><STRONG>OUR PARTNERS</STRONG></p>
+
+    <p>For more job information, click here, please: <a href="https://recruitment.mifotra.gov.rw/">government official erecruitment platform to hire workers</a></p>
+ 
+    <p>For more job information, click here, please: <a href="https://www.rwandajob.com/">Rwandan private company for jobs</a></p>
+
+
+<!---<button class="create-account-button" style="background-color: #ff5722; color: white;"><a href="create-account.html">Create account</a></p>--->
+
+
+
+</button>
+<p><i><u>For more additional information, you can use the following social media:</u></i></p>
+<a href="https://web.whatsapp.com/">Watsapp</a></p>
+<a href="https://www.youtube.com/watch?v=KNBxkMOcTgQ">Youtube channel</a></p>
+<a href="https://www.linkedin.com/">Linkedin</a></p>
+
+ <!---<a href="https://api.whatsapp.com/send?phone=250786490020" target="_blank">
+        <img src="watsapp.png" alt="watsapp">--->
+
+
+
+
+
+    <p>Designer's right,Please call me before use of my products. Contact: fabricendayisaba16@gmail.com, Telephone: 0786490020</p>
+
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!---DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Criteria Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Criteria Submission</h2>
+
+    <form action="#" method="post" id="employeeCriteriaForm">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+
+        <label for="skills">Skills required (comma-separated):</label>
+        <input type="text" id="skills" name="skills" required>
+
+        <label for="experience">Minimum Experience (years):</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <label for="education">Minimum Education Level:</label>
+        <select id="education" name="education" required>
+            <option value="highSchool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">Ph.D.</option>
+        </select>
+
+        <button type="submit">Submit Criteria</button>
+    </form>
+
+</body>
+</html>
+--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

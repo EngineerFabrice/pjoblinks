@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #header {
+            background-color: #0073e6;
+            padding: 20px;
+            color: white;
+            text-transform: uppercase;
+        }
+        .form-container {
+            border: 1px solid #0073e6;
+            padding: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin: 20px auto;
+        }
+        label, input, select, radio {
+            display: block;
+            margin: 10px 0;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1><i>APPLICATION FORM</i></h1>
+    </div>
+
+    <div class="form-container">
+        <form action="employee_submit.php" method="post">
+            <label for="employee-name">Name:</label>
+            <input type="text" id="employee-name" name="employeeName" required>
+            <label for="employee-tel">Tel Number:</label>
+            <input type="tel" id="employee-tel" name="employeeTel" required>
+            <label for="employee-education">Education Level:</label>
+            <select id="employee-education" name="employeeEducation">
+                <option value="A2">A2</option>
+                <option value="PRIMARY">Primary</option>
+                <option value="SECONDARY">Secondary</option>
+                <option value="UNIVERSITY">University</option>
+            </select>
+            <label for="employee-email">Email:</label>
+            <input type="email" id="employee-email" name="employeeEmail" required>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <label for="upload-diploma">Upload Diploma:</label>
+            <input type="file" id="upload-diploma" name="diploma" accept=".pdf,.doc,.docx" required>
+            <label for="employee-age">Age:</label>
+            <select id="employee-age" name="employeeAge">
+                <option value="18+">18 or older</option>
+            </select>
+            <div class="button-container">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
